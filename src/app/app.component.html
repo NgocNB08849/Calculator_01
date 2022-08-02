@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="calc-body">
+    <div class="calc-screen">
+      <div class="calc-operation">
+        <p>{{this.calService.arr}}</p>
+      </div>
+      <div class="calc-typed"><span class="blink-me"></span></div>
+    </div>
+    <div class="calc-button-row">
+      <div class="button c" (click)="create('C')">C</div>
+      <div class="button l" (click)="create('DEL')">DEL</div>
+      <div class="button l" (click)="create('%')">%</div>
+      <div class="button l" (click)="create('/')">/</div>
+    </div>
+    <div class="calc-button-row">
+      <div class="button" (click)="create('7')">7</div>
+      <div class="button" (click)="create('8')">8</div>
+      <div class="button" (click)="create('9')">9</div>
+      <div class="button l" (click)="create('x')">x</div>
+    </div>
+    <div class="calc-button-row">
+      <div class="button" (click)="create('4')">4</div>
+      <div class="button" (click)="create('5')">5</div>
+      <div class="button" (click)="create('6')">6</div>
+      <div class="button l" (click)="create('-')">−</div>
+    </div>
+    <div class="calc-button-row">
+      <div class="button" (click)="create('1')">1</div>
+      <div class="button" (click)="create('2')">2</div>
+      <div class="button" (click)="create('3')">3</div>
+      <div class="button l" (click)="create('+')">+</div>
+    </div>
+    <div class="calc-button-row">
+      <div class="button" (click)="create('.')">.</div>
+      <div class="button" (click)="create('0')">0</div>
+      <div class="button" (click)="create('^')">^</div>
+      <div class="button l" (click)="create('=')">=</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+
+<router-outlet></router-outlet>
